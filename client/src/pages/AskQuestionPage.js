@@ -92,14 +92,14 @@ const AskQuestionPage = () => {
 
   const handleTags = (e) => {
     if (!e || (!e.target.value && e.target.value !== '')) return;
-    const value = e.target.value.toLowerCase().trim();
+    const value = e.target.value.toLowerCase();
     setTagInput(value);
 
     const keyCode = e.target.value
       .charAt(e.target.selectionStart - 1)
       .charCodeAt();
 
-    if (keyCode === 32 && value.trim() !== '') {
+    if (keyCode === 13 && value.trim() !== '') {
       if (tags.includes(value))
         return setErrorMsg(
           "Duplicate tag found! You can't add the same tag twice."
@@ -209,7 +209,7 @@ const AskQuestionPage = () => {
                 {...params}
                 variant="outlined"
                 label="Tags"
-                placeholder="Enter space button to add tags"
+                placeholder="Press enter button to add tags"
                 onKeyDown={handleTags}
                 fullWidth
                 className={classes.inputField}

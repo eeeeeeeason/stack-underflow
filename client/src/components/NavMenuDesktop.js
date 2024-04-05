@@ -28,7 +28,7 @@ const DesktopNavMenu = () => {
             to="/"
           >
             <PublicIcon className={classes.menuIcon} />
-            Stack Underflow
+            Quantum Overflow
           </MenuItem>
           <MenuItem
             selected={pathname.startsWith('/tag')}

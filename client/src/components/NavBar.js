@@ -78,10 +78,10 @@ const NavBar = () => {
                       alt="sof-logo"
                       style={{ marginRight: '5px' }}
                     />
-                    stack<strong>underflow</strong>
+                    Quantum<strong>Overflow</strong>
                   </Button>
                 )}
-                {!isMobile && (
+                {/* {!isMobile && (
                   <Typography variant="caption" color="secondary">
                     | Made with{' '}
                     <FavoriteIcon style={{ fontSize: 10, color: '#f4649f' }} />{' '}
@@ -95,7 +95,7 @@ const NavBar = () => {
                       <strong>{` amand33p`}</strong>
                     </Link>
                   </Typography>
-                )}
+                )} */}
               </div>
               {!isMobile && <SearchBar />}
             </div>

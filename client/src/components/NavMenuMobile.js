@@ -58,7 +58,7 @@ const MobileNavMenu = () => {
           onClick={handleCloseMenu}
         >
           <PublicIcon className={classes.menuIcon} />
-          Stack Underflow
+          Quantum Overflow
         </MenuItem>
         <MenuItem
           selected={pathname.startsWith('/tag')}
@@ -81,7 +81,7 @@ const MobileNavMenu = () => {
           Users
         </MenuItem>
         <Divider />
-        <div className={classes.madeByItem}>
+        {/* <div className={classes.madeByItem}>
           <Typography variant="caption" color="secondary">
             Made with{' '}
             <FavoriteIcon style={{ fontSize: 10, color: '#f4649f' }} /> by{' '}
@@ -94,7 +94,7 @@ const MobileNavMenu = () => {
               <strong>{` amand33p`}</strong>
             </Link>
           </Typography>
-        </div>
+        </div> */}
       </Menu>
     </div>
   );
